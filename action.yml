@@ -46,7 +46,7 @@ runs:
 
 
       if VERSION >= v"1.5-"
-          Pkg.Registry.add("General")
+          Pkg.Registry.add()
 
           # If provided add local registries
           if !isempty("${{ inputs.localregistry }}")
